@@ -149,7 +149,7 @@ void BMPBasics::OverlayBMP()
 					destBmpMtx[i][j] = srcLineBuf1[j];
 				else if (srcLineBuf1[j] == 0xFF && srcLineBuf2[j] == 0xFF)
 					destBmpMtx[i][j] = srcLineBuf2[j];
-
+				else
 				destBmpMtx[i][j] = srcLineBuf1[j] + srcLineBuf2[j];
 			}
 		}
